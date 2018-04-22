@@ -1,0 +1,14 @@
+#!/mnt/x/SO/Shell/cmake-build-debug-wsl/Shell
+ps
+ls -la
+ls -la | sort
+ls >> a
+ls -la >> b
+ls -la | sort >> c
+ls -la | sort | wc -l
+ls | sort &
+ping google.com &
+ps -a | sort | uniq | grep -v sh &
+ps -a | sort | uniq | grep -v sh >> d
+ps
+ls

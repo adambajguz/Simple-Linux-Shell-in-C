@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG   CMakeFiles/Shell.dir/main.c.o CMakeFiles/Shell.dir/history.c.o CMakeFiles/Shell.dir/filemanip.c.o CMakeFiles/Shell.dir/parser.c.o  -o Shell 

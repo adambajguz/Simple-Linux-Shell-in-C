@@ -1,0 +1,3 @@
+/mnt/x/GitHub/Simple-Linux-Shell-in-C/cmake-build-release-wsl/CMakeFiles/rebuild_cache.dir
+/mnt/x/GitHub/Simple-Linux-Shell-in-C/cmake-build-release-wsl/CMakeFiles/edit_cache.dir
+/mnt/x/GitHub/Simple-Linux-Shell-in-C/cmake-build-release-wsl/CMakeFiles/Shell.dir

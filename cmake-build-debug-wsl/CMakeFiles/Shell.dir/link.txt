@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/Shell.dir/main.c.o CMakeFiles/Shell.dir/history.c.o CMakeFiles/Shell.dir/filemanip.c.o CMakeFiles/Shell.dir/parser.c.o  -o Shell 

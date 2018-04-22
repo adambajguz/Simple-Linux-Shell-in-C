@@ -180,13 +180,16 @@ int execute(char *command, int in_background, char *redirection_filename, int fd
     char *cmd_ptr, *args[256];
     cmd_ptr = parse(command, args);
 
+    // in/out descriptors and additional output descriptor
     int tab[2], fs_stdout;
 
+    // create pipe and handle pipe creation error
     if (pipe(tab) < 0) {
         perror("pipe");
         exit(1);
     }
 
+    // Create new process
     int pid = fork();
 
     switch (pid) {
@@ -195,10 +198,11 @@ int execute(char *command, int in_background, char *redirection_filename, int fd
             exit(1);
 
         IN_CHILD:
+            // If not last command in pipe
             if (cmd_ptr) {
-                dup2(tab[1], STDOUT_FILENO);
-                close(tab[0]);
-            } else {
+                dup2(tab[1], STDOUT_FILENO); // Set tab[1] as STDOUT
+                close(tab[0]); // close STDIN
+            } else { // If last command in pipe
                 if (redirection_filename)
                     fs_stdout = open(redirection_filename, O_WRONLY | O_CREAT | O_TRUNC, 0666);
                 else {
@@ -209,11 +213,11 @@ int execute(char *command, int in_background, char *redirection_filename, int fd
                         fs_stdout = tab[1]; // Write to nowhere
 #endif
                 }
-                dup2(fs_stdout, STDOUT_FILENO);
+                dup2(fs_stdout, STDOUT_FILENO); // Set fs_stdout as STDOUT
             }
+            dup2(fdout, STDIN_FILENO); // Set fdout as STDIN
 
-            dup2(fdout, STDIN_FILENO);
-
+            // Execute program with arguments and handle errors
             if (execvp(args[0], args) == -1) {
                 if (write(STDOUT_FILENO, args[0], strlen(args[0])) < 0) {
                     perror("write");
@@ -235,8 +239,10 @@ int execute(char *command, int in_background, char *redirection_filename, int fd
             else
                 printf("## Created background process with PID: %d\n", pid);
 
+            // If not last command in pipe
             if (cmd_ptr) {
                 close(tab[1]);
+                // Execute next element in pipe
                 execute(cmd_ptr, in_background, redirection_filename, tab[0]);
             }
 

@@ -35,8 +35,8 @@
       <file leaf-file-name="main.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="196" column="17" lean-forward="true" selection-start-line="196" selection-start-column="17" selection-end-line="196" selection-end-column="17" />
+            <state relative-caret-position="1312">
+              <caret line="244" column="47" selection-start-line="244" selection-start-column="47" selection-end-line="244" selection-end-column="47" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -268,12 +268,12 @@
       <workItem from="1523710753703" duration="3145000" />
       <workItem from="1523714378989" duration="128000" />
       <workItem from="1524424735070" duration="118000" />
-      <workItem from="1524424869629" duration="150000" />
+      <workItem from="1524424869629" duration="647000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56393000" />
+    <option name="totallyTimeSpent" value="56890000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -286,10 +286,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32897604" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.33006537" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
@@ -303,7 +303,6 @@
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32897604" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.32897604" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
@@ -692,8 +691,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="196" column="17" lean-forward="true" selection-start-line="196" selection-start-column="17" selection-end-line="196" selection-end-column="17" />
+        <state relative-caret-position="1312">
+          <caret line="244" column="47" selection-start-line="244" selection-start-column="47" selection-end-line="244" selection-end-column="47" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

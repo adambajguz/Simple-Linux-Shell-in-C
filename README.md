@@ -9,6 +9,6 @@ Features:
  - Ability to redirect the standard output of the command with >>;
  - Possibility to create pipes of any length using the | character;
  - Supports commands with up to 256 arguments;
- - Supports commands which length is either up to BUF_SIE macro value in interactive mode or up to theoretically infinty in batch mode;
+ - Supports commands which length is either up to BUF_SIZE macro value in interactive mode or up to theoretically infinty in batch mode;
  - Command history - the shell stores the exact content of the last 20 commands in the file history.txt in the user's home directory;
  - SIGQUIT signal sending displays the command history on the standard output.
